@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/player_picture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/default_player_picture_content_description"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/player_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/player_position"
+            app:layout_constraintStart_toEndOf="@id/player_picture"
+            app:layout_constraintTop_toTopOf="@+id/player_picture"
+            tools:text="player_name" />
+
+        <TextView
+            android:id="@+id/player_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/player_birthdate"
+            app:layout_constraintStart_toEndOf="@id/player_picture"
+            app:layout_constraintTop_toBottomOf="@+id/player_name"
+            tools:text="player_position" />
+
+        <TextView
+            android:id="@+id/player_birthdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/player_transfer_amount"
+            app:layout_constraintStart_toEndOf="@id/player_picture"
+            app:layout_constraintTop_toBottomOf="@+id/player_position"
+            tools:text="player_birthdate" />
+
+        <TextView
+            android:id="@+id/player_transfer_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/player_picture"
+            app:layout_constraintStart_toEndOf="@id/player_picture"
+            app:layout_constraintTop_toBottomOf="@+id/player_birthdate"
+            tools:text="player_transfer_amount" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
