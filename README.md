@@ -6,7 +6,7 @@ Documentation de l’API : https://www.thesportsdb.com/api.php
 
 ## Note personnelle : 
   les noms de "championnat" utilisés par l'API semblent un peu différent de ce que l'utilisateur pourrait rechercher.
-  L'API ne fait pas à proprment parler de recherche, au contraire, les requêtes sont traitées en correspondance exacte.
+  L'API ne fait pas à proprement parler de recherche, au contraire, les requêtes sont traitées en correspondance exacte.
   par exemple dans les maquettes l'utilisateur recherche "ligue 1" ou "liga", ce qui ne donnerait aucun résultat, il faut
   rechercher "french ligue 1" ou "spanish la liga"...
   Le problème est que la fonctionnalité de suggestion de termes de recherche nécessite un data provider et ne peut pas être
