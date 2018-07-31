@@ -33,7 +33,7 @@ public class MainActivity   extends AppCompatActivity
     private ImageView mCloseSearchButton;
     private String mTeamsListRequested;
     private String mCurrentScreen;
-    
+
 
     //PB : the leagues' names seem to me to be a bit different from what the user would look for
     //and the API does not handle real search methods, but relies only on exact matches...
